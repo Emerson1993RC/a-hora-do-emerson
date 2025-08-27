@@ -21,7 +21,7 @@ const quoteElement = document.getElementById('inspirational-quote');
 const quotes = [
     "Ter esperança é continuar andando, mesmo sem ver o fim da estrada.Deus vai à frente, preparando o caminho. 🙏🏼",
     "A dor que você vem sentindo, não se compara as promessas de Deus para sua vida. 🙏🏼",
-    "Senhor, acalma meu coração, leva embora o que me inquieta, renova minhas forças e me sustenta nesse dia! Amém 🙏🏼",
+    "Senhor, acalma meu coração, leva embora o que me inquieta, renova minhas forças e me sustenta nesse dia!Amém 🙏🏼",
     "Neste novo amanhecer, declaro vitória, força e alegria sobre a sua vida. Declaro que você alcançará os mais lindos sonhos de Deus.",
     "A vida fica muito mais leve quando você entende que só precisa agradar o Criador, e não as criaturas.",
     "Deus nunca desampara; Ele sempre provê tudo no tempo certo. 🙏🏼",
@@ -52,6 +52,7 @@ setInterval(setClock, 1000);
 setInterval(setDigitalClock, 1000); // Atualiza o relógio digital a cada segundo
 
 setInterval(setQuote, 10000); // Atualiza a frase a cada 10 segundos
+
 
 
 
