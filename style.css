@@ -1,0 +1,104 @@
+body {
+    /* Cor de fundo mais clara: um azul pastel */
+    background-color: #a7d9e2; /* Ou #98fb98 para um verde menta suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+    flex-direction: column; /* Adicionado para permitir empilhar o título e o relógio */
+}
+
+.clock {
+    width: 300px;
+    height: 300px;
+    background-color: #ecf0f1;
+    border-radius: 50%;
+    border: 10px solid #34495e;
+    position: relative;
+}
+
+.hand {
+    --rotation: 0;
+    background-color: #34495e;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+    transform-origin: bottom;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 10;
+}
+
+.hour {
+    width: 6px;
+    height: 60px;
+}
+
+.minute {
+    width: 4px;
+    height: 80px;
+}
+
+.second {
+    width: 2px;
+    height: 90px;
+    background-color: #e74c3c;
+}
+
+.center-dot {
+    width: 15px;
+    height: 15px;
+    background-color: #34495e;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 15;
+}
+
+.number {
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #34495e;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(calc(var(--i) * 30deg));
+    top: 0;
+    left: 0;
+}
+
+.number div {
+    transform: rotate(calc(var(--i) * -30deg));
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+}
+
+.number1 { --i: 1; transform: rotate(30deg); }
+.number2 { --i: 2; transform: rotate(60deg); }
+.number3 { --i: 3; transform: rotate(90deg); }
+.number4 { --i: 4; transform: rotate(120deg); }
+.number5 { --i: 5; transform: rotate(150deg); }
+.number6 { --i: 6; transform: rotate(180deg); }
+.number7 { --i: 7; transform: rotate(210deg); }
+.number8 { --i: 8; transform: rotate(240deg); }
+.number9 { --i: 9; transform: rotate(270deg); }
+.number10 { --i: 10; transform: rotate(300deg); }
+.number11 { --i: 11; transform: rotate(330deg); }
+.number12 { --i: 12; transform: rotate(0deg); }
+
+.digital-clock {
+    margin-top: 30px; /* Espaçamento entre o relógio analógico e o digital */
+    font-size: 3em;
+    color: #34495e; /* Cor para combinar com o relógio */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
