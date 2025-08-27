@@ -22,6 +22,7 @@ const quotes = [
     "Acredite em si mesmo, e tudo será possível.",
     "O sucesso é a soma de pequenos esforços.",
     "Vá em busca do que você sempre sonhou!",
+    " Acredite no seu potencial Madalena!",
 ];
 
 let currentQuoteIndex = 0;
@@ -47,4 +48,5 @@ setDigitalClock(); // Chamar a função digital pela primeira vez
 setQuote();
 setInterval(setClock, 1000);
 setInterval(setDigitalClock, 1000); // Atualiza o relógio digital a cada segundo
+
 setInterval(setQuote, 10000); // Atualiza a frase a cada 10 segundos
