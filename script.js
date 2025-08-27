@@ -23,6 +23,8 @@ const quotes = [
     "O sucesso é a soma de pequenos esforços.",
     "Vá em busca do que você sempre sonhou!",
     "Acredite no seu potencial Madalena!",
+    "A única forma de chegar ao impossível é acreditar que é possível.",
+    "Siga sonhando. Sonhos podem mudar com o tempo, só não podemos deixar de caminhar. E os sonhos servem para caminhar.",
 ];
 
 let currentQuoteIndex = 0;
@@ -50,4 +52,5 @@ setInterval(setClock, 1000);
 setInterval(setDigitalClock, 1000); // Atualiza o relógio digital a cada segundo
 
 setInterval(setQuote, 10000); // Atualiza a frase a cada 10 segundos
+
 
